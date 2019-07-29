@@ -7,7 +7,7 @@ We would like to understand the impact of ride-pooling, particularly if all ride
 #### 2. For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?
 
 #### 4. We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?
-<div w3-include-html="plots/Task5.html">Task 5</div>
+<div w3-include-html="plots/Task5.html"></div>
 
 #### 5. What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.
 
