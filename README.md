@@ -1,8 +1,7 @@
-# Data Visualization Final Challenge
-## Ride-Pooling Simulation
-## Authors:
-## Rohun Iyer [ri619]
-## Tanya Nabila [tn1050]
+# Data Visualization Final Challenge: Ride-Pooling Simulation
+Authors:
+*Rohun Iyer [ri619]*
+*Tanya Nabila [tn1050]*
 
 #### Analyzing ride-hailing services in Manhattan area.
 We would like to understand the impact of ride-pooling, particularly if all rides are meant to be shared. We will verify and study some scenarios/tasks we chose in this challenge.
@@ -62,3 +61,5 @@ Driver 4 Driver 255
   <img src = "plots/avg_riders_driver_4.png" width = '49%'>
   <img src = "plots/avg_riders_driver_255.png" width = '49%'>
     <p style='font-size:11px'> These plots are supplementary to the maps above and give a better temporal view of our driver's behaviors. They are meant to show the average number of passengers the driver has per hour of the day. As is obvious here, Driver 4 is idle or at home between 3am and 8am where they pick up no passengers. Additionally, the driver is inactive after 7pm until 1am. We can also see how these drivers compare to the passenger rates of all of the drivers across Manhattan. </p>
+    
+<iframe src='plots/Task5.html' width='100%' height='100%'></iframe>
