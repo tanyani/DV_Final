@@ -25,7 +25,7 @@ We would like to understand the impact of ride-pooling, particularly if all ride
 
   The best way to effectively illustrate a particular vehicle's activities throughout the day would be to visualize it's paths for each hour, the locations of all of it's pickups and drop-offs and the average number of passengers the vehicle carried compared to the rest of the vehicles for that day.
 
-              Driver 4                               Driver 255 <br>
+              Driver 4                               Driver 255 
   <img src="plots/driver_4_over_time.gif" width = '49%'>
   <img src="plots/driver_255_over_time.gif" width = '49%'>
   <p style='font-size:11px'> These GIFs show the path each driver takes at each hour over the course of the day. This will help visualize the activity of the driver at any point. Additionally, we will be able to see when they are not driving and idle, and when they were most active in terms of distance traveled. Comparing side by side, allows us to compare the trends of two separate drivers. </p>
