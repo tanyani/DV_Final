@@ -205,6 +205,12 @@ We would like to understand the impact of ride-pooling, particularly if all ride
 
 #### [2] For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?
 
+<body>    
+    
+            <div class="folium-map" id="map_88a9f97994014f90afc8fcdbf8334cbb" ></div>
+        
+</body>
+
 <script>    
     
             var map_88a9f97994014f90afc8fcdbf8334cbb = L.map(
