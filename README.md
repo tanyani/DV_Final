@@ -1,8 +1,8 @@
 # Data Visualization Final Challenge
 ## Ride-Pooling Simulation
-Authors: <br>
-* Rohun Iyer [ri619]
-* Tanya Nabila [tn1050]
+## Authors:
+## Rohun Iyer [ri619]
+## Tanya Nabila [tn1050]
 
 #### Analyzing ride-hailing services in Manhattan area.
 We would like to understand the impact of ride-pooling, particularly if all rides are meant to be shared. We will verify and study some scenarios/tasks we chose in this challenge.
@@ -22,12 +22,13 @@ We would like to understand the impact of ride-pooling, particularly if all ride
       5. From 8pm to midnight, the number of rides unserved decreases across the board.
 
 ## [4] We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?
-Vehicles violating this condition indeed exist in the dataset! After reading in the vehicle paths dataset, `vehicle_paths_pnas`, we see that _all_ the vehicles have violated this condition, but this might be due to an error in the system since the number of passengers range from -2 to 100 and an average of 33 passengers at a moment was found. As we can observe from the boxplot below, every driver's average number of passengers is above the limit of 4 passengers.<br>
-<img src="plots/task-4_2.png" width="50%" height="50%"/>
-
+Vehicles violating this condition indeed exist in the dataset! After reading in the vehicle paths dataset, `vehicle_paths_pnas`, we see that _all_ the vehicles have violated this condition, but this might be due to an error in the system since the number of passengers range from -2 to 100 and an average of 33 passengers at a moment was found. <br>
+<img src="plots/task-4_2.png" width="45%" height="50%"/>
+<img src="plots/task-4_3.png" width="45%" height="50%"/> <br>
+As we can observe from the boxplot above, every driver's average number of passengers is above the limit of 4 passengers. Furthermore, to further proof that this seems to be an error, is that the average number of passengers recorded per hour seems to be gradually increasing since the start of the day. This seems that the system somehow fails to take into account the correct number of dropped off passengers during these events.
+<br>
 In the heatmap below, every "pickup" event that violates the limit (above 4) are represented as a dot and partitioned for every hour. <br>
 <img src="plots/task-4_1.gif" width="50%" height="100%" /><br>
-
 The distributions of these violations can be seen spatially and throughout time as they are more dispersed across Manhattan, but becomes *concentrated* in the midtown area around hour 6-9 AM.
 <br>
 ## [5] What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.
