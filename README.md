@@ -1,11 +1,19 @@
-# NYU CUSP | Data Visualization Final Challenge
-#### Analyzing ride-hailing services in Manhattan area.
+---
+layout: default
+title: NYU CUSP | Data Visualization Final Challenge
+---
+# Data Visualization Final Challenge
+## Ride-Pooling Simulation
+Authors: <br>
+* Rohun Iyer [ri619]
+* Tanya Nabila [tn1050]
 
+#### Analyzing ride-hailing services in Manhattan area.
 We would like to understand the impact of ride-pooling, particularly if all rides are meant to be shared. We will verify and study some scenarios/tasks we chose in this challenge.
 
 # Scenarios
 
-#### [2] For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?
+## [2] For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?
 
 <img src="plots/not_served_over_time.gif" width = '75%'>
 
@@ -17,7 +25,7 @@ We would like to understand the impact of ride-pooling, particularly if all ride
       4. From noon until 8pm, the number of rides unserved in Midtown steadily rises.
       5. From 8pm to midnight, the number of rides unserved decreases across the board.
 
-#### [4] We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?
+## [4] We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?
 Vehicles violating this condition indeed exist in the dataset! After reading in the vehicle paths dataset, `vehicle_paths_pnas`, we see that _all_ the vehicles have violated this condition, but this might be due to an error in the system since the number of passengers range from -2 to 100 and an average of 33 passengers at a moment was found. As we can observe from the boxplot below, every driver's average number of passengers is above the limit of 4 passengers.<br>
 <img src="plots/task-4_2.png" width="50%" height="50%"/>
 
@@ -26,7 +34,7 @@ In the heatmap below, every "pickup" event that violates the limit (above 4) are
 
 The distributions of these violations can be seen spatially and throughout time as they are more dispersed across Manhattan, but becomes *concentrated* in the midtown area around hour 6-9 AM.
 <br>
-#### [5] What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.
+## [5] What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.
 After reading in the vehicle paths dataset, `vehicle_paths`, we see that the distributions of the number of passengers on each Pickup/Dropoff event is as follows. <br>
 <img src="plots/task-5_1.png" width="45%" height="30%"/>
 <img src="plots/task-5_2.png" width="45%" height="30%"/> </br>
@@ -37,7 +45,7 @@ We decided to separate these into two groups, the normal vehicles group and the 
 The group of vehicles with exceptionally low average vehicle utilization is on the left while the normal vehicles group is on the right. We can easily see from the map that vehicles with low vehicle utilization tend to only work at night as we observe them appear from 8PM and gradually grow in numbers from midnight to its peak at 2 AM and slowly decreases until about 6 AM. 
 
 
-#### [8] If we are to pick a particular vehicle ID, how can we effectively illustrate its activities throughout the day?
+## [8] If we are to pick a particular vehicle ID, how can we effectively illustrate its activities throughout the day?
 
   The best way to effectively illustrate a particular vehicle's activities throughout the day would be to visualize it's paths for each hour, the locations of all of it's pickups and drop-offs and the average number of passengers the vehicle carried compared to the rest of the vehicles for that day.
 Driver 4 Driver 255 
