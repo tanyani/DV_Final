@@ -1,6 +1,5 @@
 ---
 layout: default
-title: NYU CUSP | Data Visualization Final Challenge
 ---
 # Data Visualization Final Challenge
 ## Ride-Pooling Simulation
@@ -37,11 +36,11 @@ The distributions of these violations can be seen spatially and throughout time 
 ## [5] What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.
 After reading in the vehicle paths dataset, `vehicle_paths`, we see that the distributions of the number of passengers on each Pickup/Dropoff event is as follows. <br>
 <img src="plots/task-5_1.png" width="45%" height="30%"/>
-<img src="plots/task-5_2.png" width="45%" height="30%"/> </br>
+<img src="plots/task-5_2.png" width="45%" height="30%"/> <br>
 As seen in the distributions above, majority of the vehicles tend to have a fairly high ridership at an average of 3.24 number of passengers. However, we can see from the boxplot that there are many considered outliers who has low ridership.  
 We decided to separate these into two groups, the normal vehicles group and the outlier group with low average number of passengers (based on the IQR outlier calculations). We then compare the differences in these distributions in the Heatmap per hour plots below. <br>
 <img src="plots/task-5_3.gif" width="45%" height="30%"/>
-<img src="plots/task-5_4.gif" width="45%" height="30%"/> </br>
+<img src="plots/task-5_4.gif" width="45%" height="30%"/> <br>
 The group of vehicles with exceptionally low average vehicle utilization is on the left while the normal vehicles group is on the right. We can easily see from the map that vehicles with low vehicle utilization tend to only work at night as we observe them appear from 8PM and gradually grow in numbers from midnight to its peak at 2 AM and slowly decreases until about 6 AM. 
 
 
@@ -64,5 +63,4 @@ Driver 4 Driver 255
 
   <img src = "plots/avg_riders_driver_4.png" width = '49%'>
   <img src = "plots/avg_riders_driver_255.png" width = '49%'>
-    <p style='font-size:11px'> These plots are supplementary to the maps above and give a better temporal view of our driver's behaviors. They are meant to show the average number of passengers the driver has per hour of the day. As is obvious here, Driver 4 is idle or at home between 3am and 8am where they pick up no passengers. Additionally, the driver is inactive after 7pm until 1am.
-    We can also see how these drivers compare to the passenger rates of all of the drivers across Manhattan. </p>
+    <p style='font-size:11px'> These plots are supplementary to the maps above and give a better temporal view of our driver's behaviors. They are meant to show the average number of passengers the driver has per hour of the day. As is obvious here, Driver 4 is idle or at home between 3am and 8am where they pick up no passengers. Additionally, the driver is inactive after 7pm until 1am. We can also see how these drivers compare to the passenger rates of all of the drivers across Manhattan. </p>
