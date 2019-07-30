@@ -18,8 +18,24 @@ We would like to understand the impact of ride-pooling, particularly if all ride
       5. From 8pm to midnight, the number of rides unserved decreases across the board.
 
 #### [4] We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?
+Vehicles violating this condition indeed exist in the dataset! After reading in the vehicle paths dataset, `vehicle_paths_pnas`, we see that _all_ the vehicles have violated this condition, but this might be due to an error in the system since the number of passengers range from -2 to 100 and an average of 33 passengers at a moment was found. As we can observe from the boxplot below, every driver's average number of passengers is above the limit of 4 passengers.<br>
+<img src="plots/task-4_2.png" width="50%" height="50%"/>
 
+In the heatmap below, every "pickup" event that violates the limit (above 4) are represented as a dot and partitioned for every hour. <br>
+<img src="plots/task-4_1.gif" width="50%" height="100%" /><br>
+
+The distributions of these violations can be seen spatially and throughout time as they are more dispersed across Manhattan, but becomes *concentrated* in the midtown area around hour 6-9 AM.
+<br>
 #### [5] What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.
+After reading in the vehicle paths dataset, `vehicle_paths`, we see that the distributions of the number of passengers on each Pickup/Dropoff event is as follows. <br>
+<img src="plots/task-5_1.png" width="45%" height="30%"/>
+<img src="plots/task-5_2.png" width="45%" height="30%"/> </br>
+As seen in the distributions above, majority of the vehicles tend to have a fairly high ridership at an average of 3.24 number of passengers. However, we can see from the boxplot that there are many considered outliers who has low ridership.  
+We decided to separate these into two groups, the normal vehicles group and the outlier group with low average number of passengers (based on the IQR outlier calculations). We then compare the differences in these distributions in the Heatmap per hour plots below. <br>
+<img src="plots/task-5_3.gif" width="45%" height="30%"/>
+<img src="plots/task-5_4.gif" width="45%" height="30%"/> </br>
+The group of vehicles with exceptionally low average vehicle utilization is on the left while the normal vehicles group is on the right. We can easily see from the map that vehicles with low vehicle utilization tend to only work at night as we observe them appear from 8PM and gradually grow in numbers from midnight to its peak at 2 AM and slowly decreases until about 6 AM. 
+
 
 #### [8] If we are to pick a particular vehicle ID, how can we effectively illustrate its activities throughout the day?
 
