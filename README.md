@@ -1,6 +1,3 @@
----
-layout: default
----
 # Data Visualization Final Challenge
 ## Ride-Pooling Simulation
 Authors: <br>
