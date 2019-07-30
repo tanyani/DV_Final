@@ -6,9 +6,10 @@ We would like to understand the impact of ride-pooling, particularly if all ride
 # Scenarios
 
 #### [2] For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?
-
+```html
 <img src=plots/not_served_over_time.gif width = '75%'></img>
-![2](plots/not_served_over_time.gif){width=75%}
+```
+![2](plots/not_served_over_time.gif | width=200)
 
     Looking at the requests not served over the course of the day we see:
 
