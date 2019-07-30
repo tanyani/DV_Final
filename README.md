@@ -7,7 +7,15 @@ We would like to understand the impact of ride-pooling, particularly if all ride
 
 #### [2] For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?
 
-INSERT THE GIF THAT ISNT RECORDING
+<img src=plots/not_served_over_time.gif width = '75%'></img>
+
+    Looking at the requests not served over the course of the day we see:
+
+      1. A large number of requests not served in Greenwich Village in the early hours of the day. From 2-6am
+      2. At 7am, this randomly disperses to most of Lower Manhattan.
+      3. After 7am, the requests not served disperses north through the rest of Manhattan. With lots of unserved requests in Midtown and Upper East Side. 8-11am
+      4. From noon until 8pm, the number of rides unserved in Midtown steadily rises.
+      5. From 8pm to midnight, the number of rides unserved decreases across the board.
 
 #### [4] We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?
 
