@@ -17,7 +17,7 @@ As we can see here, there doesn't exist any substantial spatial aspect over the 
 
 <img src="plots/not_served_timeseries.png" width="90%" height="60%"/>
 
-We can see a spike during the morning rush hour and another just after evening rush hour. Comparing to a map over time can give us more insight into the intricacies of the not served customers. 
+We can see a spike during the morning rush hour and another just after evening rush hour. Comparing to a map over time can give us more insight into the intricacies of the not served customers.
 
 <iframe src='plots/not_served_over_time.html' width='100%' height='100%'></iframe>
 
@@ -55,15 +55,16 @@ The group of vehicles with exceptionally low average vehicle utilization is on t
   The best way to effectively illustrate a particular vehicle's activities throughout the day would be to visualize it's paths for each hour, the locations of all of it's pickups and drop-offs and the average number of passengers the vehicle carried compared to the rest of the vehicles for that day.
 Driver 4 Driver 255
 
-  <img src="plots/driver_4_over_time.gif" width = '49%'>
-  <img src="plots/driver_255_over_time.gif" width = '49%'>
+
+  <iframe src='plots/driver_4_over_time.html' width='100%' height='100%'></iframe>
+  <iframe src='plots/driver_255_over_time.html' width='100%' height='100%'></iframe>
   <p style='font-size:11px'> These GIFs show the path each driver takes at each hour over the course of the day. This will help visualize the activity of the driver at any point. Additionally, we will be able to see when they are not driving and idle, and when they were most active in terms of distance traveled. Comparing side by side, allows us to compare the trends of two separate drivers. </p>
   <br>
 
-  <img src = "plots/driver_4_pickups.png" width = '24%'>
-  <img src = "plots/driver_4_dropoffs.png" width = '24%'>
-  <img src = "plots/driver_255_pickups.png" width = '24%'>
-  <img src = "plots/driver_255_dropoffs.png" width = '24%'>
+  <iframe src='plots/pickup_dropoff_4.html' width='100%' height='100%'></iframe>
+
+  <iframe src='plots/pickup_dropoff_255.html' width='100%' height='100%'></iframe>
+
   <p style='font-size:11px'> These plots show the pickup and dropoff locations of each driver over the entire day. This allows us to see any spatial trends the driver takes in terms of where they pickup/dropoff passengers. As we can see, Driver 4 on the left, tends to pickup passengers in Chelsea and West Midtown, whereas Driver 255 is more likely to pick up a passenger in the Upper East Side. </p>
 <br>
 
