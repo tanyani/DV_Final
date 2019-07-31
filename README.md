@@ -50,23 +50,23 @@ After reading in the vehicle paths dataset, `vehicle_paths`, we see that the dis
 As seen in the distributions above, majority of the vehicles tend to have a fairly high ridership at an average of 3.24 number of passengers. However, we can see from the boxplot that there are many considered outliers who has low ridership.  
 We decided to separate these into two groups, the normal vehicles group and the outlier group with low average number of passengers (based on the IQR outlier calculations). We then compare the differences in these distributions in the Heatmap per hour plots below. <br>
 
-
+<h4> Driver 4 </h4>
 <iframe width="450" height="600" src='plots/Task5_1.html'></iframe>
+
+<h4> Driver 255 </h4>
 <iframe width="450" height="600" src='plots/Task5_2.html'></iframe>
 <br>
 The group of vehicles with exceptionally low average vehicle utilization is on the left while the normal vehicles group is on the right. We can easily see from the map that vehicles with low vehicle utilization tend to only work at night as we observe them appear from 8PM and gradually grow in numbers from midnight to its peak at 2 AM and slowly decreases until about 6 AM.
 
-<a name="problem_5"></a>
+<a name="problem_8"></a>
 ## [8] If we are to pick a particular vehicle ID, how can we effectively illustrate its activities throughout the day?
 
   The best way to effectively illustrate a particular vehicle's activities throughout the day would be to visualize it's paths for each hour, the locations of all of it's pickups and drop-offs and the average number of passengers the vehicle carried compared to the rest of the vehicles for that day.
 
   Below, we show plots for Drivers 4 and 255, respectively.
 
-  <h4> Driver 4 </h4>
+
   <iframe width="450" height="600" src='plots/driver_4_over_time.html'></iframe>
-  
-  <h4> Driver 255 </h4>
   <iframe width="450" height="600" src='plots/driver_255_over_time.html'></iframe>
   <p style='font-size:11px'> These GIFs show the path each driver takes at each hour over the course of the day. This will help visualize the activity of the driver at any point. Additionally, we will be able to see when they are not driving and idle, and when they were most active in terms of distance traveled. Comparing side by side, allows us to compare the trends of two separate drivers. </p>
   <br>
