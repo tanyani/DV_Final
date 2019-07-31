@@ -12,14 +12,14 @@ We would like to understand the impact of ride-pooling, particularly if all ride
 
 To solve this problem we employed two maps. The first map shows a heat map of all trips not served over the course of the day. This was done primarily to understand if purely spatial relationship existed. Next we wanted to analyze the temporal aspect. First we used a simple time series plot of the percentage of trips not served per hour of the day, and then we created a heat map for each hour of the day to analyze the a further spatial relationship.
 
-<iframe src='plots/HeatMap_not_served.html' width='100%' height='400'></iframe>
+<iframe width="450" height="600" src='plots/HeatMap_not_served.html'></iframe>
 As we can see here, there doesn't exist any substantial spatial aspect over the whole day. Except for the fact that no rides were not served in Upper Manhattan.
 
 <img src="plots/not_served_timeseries.png" width="90%" height="60%"/>
 
 We can see a spike during the morning rush hour and another just after evening rush hour. Comparing to a map over time can give us more insight into the intricacies of the not served customers.
 
-<iframe src='plots/not_served_over_time.html' width='100%' height='400'></iframe>
+<iframe width="450" height="600" src='plots/not_served_over_time.html'></iframe>
 
 Looking at the requests not served over the course of the day we see:
 
