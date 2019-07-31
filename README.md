@@ -56,14 +56,14 @@ The group of vehicles with exceptionally low average vehicle utilization is on t
 Driver 4 Driver 255
 
 
-  <iframe src='plots/driver_4_over_time.html' width='100%' height='100%'></iframe>
-  <iframe src='plots/driver_255_over_time.html' width='100%' height='100%'></iframe>
+  <iframe width="450" height="600" src='plots/driver_4_over_time.html'></iframe>
+  <iframe width="450" height="600" src='plots/driver_255_over_time.html'></iframe>
   <p style='font-size:11px'> These GIFs show the path each driver takes at each hour over the course of the day. This will help visualize the activity of the driver at any point. Additionally, we will be able to see when they are not driving and idle, and when they were most active in terms of distance traveled. Comparing side by side, allows us to compare the trends of two separate drivers. </p>
   <br>
 
-  <iframe src='plots/pickup_dropoff_4.html' width='100%' height='400'></iframe>
+  <iframe width="450" height="600" src='plots/pickup_dropoff_4.html'></iframe>
 
-  <iframe src='plots/pickup_dropoff_255.html' width='100%' height='400'></iframe>
+  <iframe width="450" height="600" src='plots/pickup_dropoff_255.html'></iframe>
 
   <p style='font-size:11px'> These plots show the pickup and dropoff locations of each driver over the entire day. This allows us to see any spatial trends the driver takes in terms of where they pickup/dropoff passengers. As we can see, Driver 4 on the left, tends to pickup passengers in Chelsea and West Midtown, whereas Driver 255 is more likely to pick up a passenger in the Upper East Side. </p>
 <br>
