@@ -47,8 +47,8 @@ As seen in the distributions above, majority of the vehicles tend to have a fair
 We decided to separate these into two groups, the normal vehicles group and the outlier group with low average number of passengers (based on the IQR outlier calculations). We then compare the differences in these distributions in the Heatmap per hour plots below. <br>
 <!-- <img src="plots/task-5_3.gif" width="45%" height="30%"/>
 <img src="plots/task-5_4.gif" width="45%" height="30%"/>  -->
-<iframe width="450" height="600" src='plots/task-5_1.html'></iframe>
-<iframe width="450" height="600" src='plots/task-5_2.html'></iframe>
+<iframe width="450" height="600" src='plots/task5_1.html'></iframe>
+<iframe width="450" height="600" src='plots/task5_2.html'></iframe>
 <br>
 The group of vehicles with exceptionally low average vehicle utilization is on the left while the normal vehicles group is on the right. We can easily see from the map that vehicles with low vehicle utilization tend to only work at night as we observe them appear from 8PM and gradually grow in numbers from midnight to its peak at 2 AM and slowly decreases until about 6 AM.
 
