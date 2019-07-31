@@ -10,15 +10,24 @@ We would like to understand the impact of ride-pooling, particularly if all ride
 
 ## [2] For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?
 
-<img src="plots/not_served_over_time.gif" width = '75%'>
+To solve this problem we employed two maps. The first map shows a heat map of all trips not served over the course of the day. This was done primarily to understand if purely spatial relationship existed. Next we wanted to analyze the temporal aspect. First we used a simple time series plot of the percentage of trips not served per hour of the day, and then we created a heat map for each hour of the day to analyze the a further spatial relationship.
 
-    Looking at the requests not served over the course of the day we see:
+<iframe src='plots/HeatMap_not_served.html' width='100%' height='100%'></iframe>
+As we can see here, there doesn't exist any substantial spatial aspect over the whole day. Except for the fact that no rides were not served in Upper Manhattan.
 
-      1. A large number of requests not served in Greenwich Village in the early hours of the day. From 2-6am
-      2. At 7am, this randomly disperses to most of Lower Manhattan.
-      3. After 7am, the requests not served disperses north through the rest of Manhattan. With lots of unserved requests in Midtown and Upper East Side. 8-11am
-      4. From noon until 8pm, the number of rides unserved in Midtown steadily rises.
-      5. From 8pm to midnight, the number of rides unserved decreases across the board.
+<img src="plots/not_served_timeseries.png" width="90%" height="60%"/>
+
+We can see a spike during the morning rush hour and another just after evening rush hour. Comparing to a map over time can give us more insight into the intricacies of the not served customers. 
+
+<iframe src='plots/not_served_over_time.html' width='100%' height='100%'></iframe>
+
+Looking at the requests not served over the course of the day we see:
+
+  1. A large number of requests not served in Greenwich Village in the early hours of the day. From 2-6am
+  2. At 7am, this randomly disperses to most of Lower Manhattan.
+  3. After 7am, the requests not served disperses north through the rest of Manhattan. With lots of unserved requests in Midtown and Upper East Side. 8-11am
+  4. From noon until 8pm, the number of rides unserved in Midtown steadily rises.
+  5. From 8pm to midnight, the number of rides unserved decreases across the board.
 
 ## [4] We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?
 Vehicles violating this condition indeed exist in the dataset! After reading in the vehicle paths dataset, `vehicle_paths_pnas`, we see that _all_ the vehicles have violated this condition, but this might be due to an error in the system since the number of passengers range from -2 to 100 and an average of 33 passengers at a moment was found. <br>
@@ -38,13 +47,13 @@ As seen in the distributions above, majority of the vehicles tend to have a fair
 We decided to separate these into two groups, the normal vehicles group and the outlier group with low average number of passengers (based on the IQR outlier calculations). We then compare the differences in these distributions in the Heatmap per hour plots below. <br>
 <img src="plots/task-5_3.gif" width="45%" height="30%"/>
 <img src="plots/task-5_4.gif" width="45%" height="30%"/> <br>
-The group of vehicles with exceptionally low average vehicle utilization is on the left while the normal vehicles group is on the right. We can easily see from the map that vehicles with low vehicle utilization tend to only work at night as we observe them appear from 8PM and gradually grow in numbers from midnight to its peak at 2 AM and slowly decreases until about 6 AM. 
+The group of vehicles with exceptionally low average vehicle utilization is on the left while the normal vehicles group is on the right. We can easily see from the map that vehicles with low vehicle utilization tend to only work at night as we observe them appear from 8PM and gradually grow in numbers from midnight to its peak at 2 AM and slowly decreases until about 6 AM.
 
 
 ## [8] If we are to pick a particular vehicle ID, how can we effectively illustrate its activities throughout the day?
 
   The best way to effectively illustrate a particular vehicle's activities throughout the day would be to visualize it's paths for each hour, the locations of all of it's pickups and drop-offs and the average number of passengers the vehicle carried compared to the rest of the vehicles for that day.
-Driver 4 Driver 255 
+Driver 4 Driver 255
 
   <img src="plots/driver_4_over_time.gif" width = '49%'>
   <img src="plots/driver_255_over_time.gif" width = '49%'>
